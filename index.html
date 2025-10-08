@@ -2,7 +2,131 @@
 <html lang="fr">
 <head><!DOCTYPE html>
 <html lang="fr">
+<head><!DOCTYPE html>
+<html lang="fr">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WANTER-SN | Achetez et vendez au cœur du Sénégal</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1 class="logo">WANTER<span>-SN</span></h1>
+      <ul class="nav-links">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#fonctionnalites">Fonctionnalités</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="lang-btn">🌍 Wolof</button>
+    </nav>
+
+    <div class="hero" id="accueil">
+      <h2 id="hero-title">« Achetez et vendez au cœur du Sénégal »</h2>
+      <p id="hero-text">
+        WANTER-SN est la plateforme sénégalaise de confiance pour vendre et acheter vos articles neufs ou d'occasion — en toute simplicité 🇸🇳
+      </p>
+      <a href="#fonctionnalites" class="btn" id="btn-more">Découvrir plus</a>
+    </div>
+  </header>
+
+  <section id="fonctionnalites" class="features">
+    <h2 id="features-title">Fonctionnalités principales</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>🛍️ Vente & Achat</h3>
+        <p id="card1">Publiez vos annonces facilement : vêtements, téléphones, voitures, et plus encore.</p>
+      </div>
+      <div class="card">
+        <h3>💬 Négociation directe</h3>
+        <p id="card2">Discutez avec les acheteurs et vendez en toute confiance via la messagerie sécurisée.</p>
+      </div>
+      <div class="card">
+        <h3>🚚 Livraison locale</h3>
+        <p id="card3">Suivi des commandes avec nos partenaires comme Yobanté Express ou Gaïndé Delivery.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <h2 id="about-title">Une plateforme 100% sénégalaise 🇸🇳</h2>
+    <p id="about-text">
+      Inspirée par les valeurs de confiance, de partage et de proximité, WANTER-SN connecte vendeurs et acheteurs dans tout le pays.
+      Que vous soyez à Dakar, Thiès, Saint-Louis ou Ziguinchor — vous pouvez vendre, acheter et négocier facilement.
+    </p>
+  </section>
+
+  <footer id="contact">
+    <h2 id="footer-title">Contact & Support</h2>
+    <p>Email : <a href="mailto:contact@wanter-sn.com">contact@wanter-sn.com</a></p>
+    <p>WhatsApp : +221 77 000 00 00</p>
+    <p>Suivez-nous sur <strong>Instagram</strong>, <strong>Facebook</strong> & <strong>TikTok</strong> 🎉</p>
+    <p class="copy">© 2025 WANTER-SN — Tous droits réservés</p>
+  </footer>
+
+  <script>
+    // 🎨 Animation d’entrée du logo et du texte
+    document.addEventListener("DOMContentLoaded", () => {
+      const logo = document.querySelector(".logo");
+      const hero = document.querySelector(".hero");
+      logo.classList.add("slide-in");
+      setTimeout(() => hero.classList.add("fade-in"), 400);
+    });
+
+    // 🌍 Gestion du bouton de langue
+    const langBtn = document.getElementById("lang-btn");
+    let currentLang = "fr";
+
+    const texts = {
+      fr: {
+        heroTitle: "« Achetez et vendez au cœur du Sénégal »",
+        heroText: "WANTER-SN est la plateforme sénégalaise de confiance pour vendre et acheter vos articles neufs ou d'occasion — en toute simplicité 🇸🇳",
+        btnMore: "Découvrir plus",
+        featuresTitle: "Fonctionnalités principales",
+        card1: "Publiez vos annonces facilement : vêtements, téléphones, voitures, et plus encore.",
+        card2: "Discutez avec les acheteurs et vendez en toute confiance via la messagerie sécurisée.",
+        card3: "Suivi des commandes avec nos partenaires comme Yobanté Express ou Gaïndé Delivery.",
+        aboutTitle: "Une plateforme 100% sénégalaise 🇸🇳",
+        aboutText: "Inspirée par les valeurs de confiance, de partage et de proximité, WANTER-SN connecte vendeurs et acheteurs dans tout le pays.",
+        footerTitle: "Contact & Support",
+        langLabel: "🌍 Wolof"
+      },
+      wo: {
+        heroTitle: "« Jënd ak jaay ci biir Senegaal »",
+        heroText: "WANTER-SN mooy platform bu Senegaal bu am njariñ ngir jënd ak jaay say xaalis ak say mbedd-mi ñu bees walla ñu gëna jàngle 🇸🇳",
+        btnMore: "Gëna xam",
+        featuresTitle: "Loolu ñu mën def ci WANTER-SN",
+        card1: "Sàjj say jëfandikookat : say wecc, telefon, oto ak lu bees.",
+        card2: "Wax ak njàngalekat yi te jaay ci jam ak ndimbal.",
+        card3: "Topp say cmd ak ñu liggéey ci Yobanté Express ak Gaïndé Delivery.",
+        aboutTitle: "Platform bu Senegaal bu jëm ci doole 🇸🇳",
+        aboutText: "WANTER-SN mooy jàmm bu ëpp solo ci diggante jaaykat ak jëfandikookat ci Senegaal sépp.",
+        footerTitle: "Jokkool ak ndimbal",
+        langLabel: "🇫🇷 Français"
+      }
+    };
+
+    langBtn.addEventListener("click", () => {
+      currentLang = currentLang === "fr" ? "wo" : "fr";
+      const lang = texts[currentLang];
+      document.getElementById("hero-title").textContent = lang.heroTitle;
+      document.getElementById("hero-text").textContent = lang.heroText;
+      document.getElementById("btn-more").textContent = lang.btnMore;
+      document.getElementById("features-title").textContent = lang.featuresTitle;
+      document.getElementById("card1").textContent = lang.card1;
+      document.getElementById("card2").textContent = lang.card2;
+      document.getElementById("card3").textContent = lang.card3;
+      document.getElementById("about-title").textContent = lang.aboutTitle;
+      document.getElementById("about-text").textContent = lang.aboutText;
+      document.getElementById("footer-title").textContent = lang.footerTitle;
+      langBtn.textContent = lang.langLabel;
+    });
+  </script>
+</body>
+</html>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WANTER-SN | Achetez et vendez au cœur du Sénégal</title>
