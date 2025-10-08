@@ -4,7 +4,15 @@
 <html lang="fr">
 <head><!DOCTYPE html>
 <html lang="fr">
-<head>
+<head><!-- Musique d'accueil -->
+<audio id="bg-music" src="musique.mp3" autoplay loop></audio>
+
+<script>
+  // Contrôle du son
+  const music = document.getElementById("bg-music");
+  music.volume = 0.2; // volume faible pour ne pas gêner
+</script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WANTER-SN | Achetez et vendez au cœur du Sénégal</title>
