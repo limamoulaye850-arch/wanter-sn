@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wanter-sn | Achetez et vendez au cœur du Sénégal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2b0e6f0b5.js" crossorigin="anonymous"></script>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family:'Poppins', sans-serif;
+      background: #f9f9f9;
+      color:#222;
+      scroll-behavior:smooth;
+    }
+    header {
+      background: linear-gradient(90deg, #00843D, #FFD700, #D71A28);
+      color:white;
+      text-align:center;
+      padding:1.5rem 1rem;
+      box-shadow:0 4px 6px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      font-size:2rem;
+      font-weight:700;
+      margin-bottom:0.5rem;
+    }
+    nav a {
+      color:white;
+      text-decoration:none;
+      margin:0 1rem;
+      font-weight:600;
+      transition:0.3s;
+    }
+    nav a:hover {
+      text-decoration:underline;
+    }
+    section {
+      padding:3rem 1.5rem;
+      max-width:1000px;
+      margin:0 auto;
+    }
+    .hero {
+      background-image: linear-gradient(to right, rgba(255,215,0,0.8), rgba(0,132,61,0.8)), url('https://images.unsplash.com/photo-1523475496153-3d6cc3000c9a?auto=format&fit=crop&w=1200&q=80');
+      background-size:cover;
+      background-position:center;
+      border-radius:15px;
+      text-align:center;
+      color:white;
+      padding:4rem 2rem;
+      margin-top:2rem;
+    }
+    .hero h2 {
+      font-size:2rem;
+      font-weight:700;
+      margin-bottom:1rem;
+    }
+    .hero p {
+      font-size:1.1rem;
+      font-weight:500;
+    }
+    h2 {
+      color:#00843D;
+      margin-bottom:1.2rem;
+      text-align:center;
+      font-size:1.8rem;
+    }
+    .section-card {
+      background:white;
+      border-radius:10px;
+      padding:2rem;
+      box-shadow:0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom:2rem;
+      animation: fadeIn 1s ease;
+    }
+    ul li {
+      margin-bottom:0.7rem;
+    }
+    .icon {
+      font-size:2rem;
+      color:#D71A28;
+      margin-bottom:1rem;
+    }
+    footer {
+      background:#222;
+      color:white;
+      text-align:center;
+      padding:1.5rem;
+      margin-top:3rem;
+      font-size:0.9rem;
+    }
+    footer a {
+      color:#FFD700;
+      text-decoration:none;
+      font-weight:600;
+    }
+    footer a:hover {
+      text-decoration:underline;
+    }
+    @keyframes fadeIn {
+      from {opacity:0; transform:translateY(20px);}
+      to {opacity:1; transform:translateY(0);}
+    }
+    @media(max-width:768px){
+      nav a{display:block;margin:0.5rem 0;}
+      .hero h2{font-size:1.6rem;}
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>🇸🇳 Wanter-sn</h1>
+    <nav>
+      <a href="#accueil">Accueil</a>
+      <a href="#apropos">À propos</a>
+      <a href="#fonctionnalites">Fonctionnalités</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="accueil" class="hero">
+    <h2>Achetez et vendez au cœur du Sénégal</h2>
+    <p>« Jënd ak Jaay ci Wanter-sn » — La plateforme 100% sénégalaise pour vendre et acheter en toute confiance.</p>
+  </section>
+
+  <section id="apropos" class="section-card">
+    <div style="text-align:center;">
+      <i class="fas fa-handshake icon"></i>
+    </div>
+    <h2>À propos</h2>
+    <p>Wanter-sn est une application et un site web sénégalais dédiés à la vente et à l’achat d’articles neufs ou d’occasion : vêtements, téléphones, automobiles, électroménager, et bien plus encore.</p>
+    <p>Notre objectif est de connecter les Sénégalais à travers une plateforme fiable, simple et ancrée dans la culture locale.</p>
+  </section>
+
+  <section id="fonctionnalites" class="section-card">
+    <div style="text-align:center;">
+      <i class="fas fa-bolt icon"></i>
+    </div>
+    <h2>Fonctionnalités</h2>
+    <ul>
+      <li>Publication rapide d’annonces avec photo et description</li>
+      <li>Recherche avancée par catégorie, prix et localisation</li>
+      <li>Interface bilingue (Français / Wolof)</li>
+      <li>Messagerie intégrée entre vendeurs et acheteurs</li>
+      <li>Design moderne et 100% responsive</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="section-card">
+    <div style="text-align:center;">
+      <i class="fas fa-envelope icon"></i>
+    </div>
+    <h2>Contact</h2>
+    <p>📧 Email : <a href="mailto:contact@wanter-sn.sn">contact@wanter-sn.sn</a></p>
+    <p>📞 Téléphone : +221 77 000 0000</p>
+    <p>📍 Adresse : Dakar, Sénégal</p>
+    <p>Suivez-nous sur : 
+      <a href="#">Facebook</a> |
+      <a href="#">Instagram</a> |
+      <a href="#">TikTok</a>
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 <strong>Wanter-sn</strong> — Tous droits réservés | 
+    <a href="#apropos">À propos</a> · <a href="#contact">Contact</a>
+  </footer>
+</body>
+</html>
